@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHÖN - Beauty E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="Schön Logo" class="logo">
+                <span class="brand-name">Schön</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="homepage.html" class="nav-link">Home</a></li>
+                <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search search-icon"></i>
+                <i class="fas fa-user user-icon"></i>
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="products-page">
+        <div class="container">
+            <!-- PAGE HEADER - EXACT LAYOUT BARU -->
+            <div class="page-header">
+                <div class="header-left">
+                    <h1>Semua Produk</h1>
+                    <div class="header-left-controls">
+                        <button class="filter-btn-main" id="filterBtn">
+                            <i class="fas fa-filter"></i>
+                            Tampilkan Filter
+                        </button>
+                        <span class="product-count-left">Menampilkan 15 produk</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="sort-select">
+                        <select id="sortSelect">
+                            <option>Terpopuler</option>
+                            <option>Terbaru</option>
+                            <option>Harga: Rendah - Tinggi</option>
+                            <option>Harga: Tinggi - Rendah</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+<div class="product-grid" id="product-grid">
+            <!-- BARIS 1 (Produk 1-5) -->
+        <div class="product-card" data-id="1">
+                <div class="product-image">
+                    <img src="img/produk.jpg" alt="Acne Care">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Skincare</span><span class="tag">Kombinasi</span></div>
+                    <p class="brand">YOU</p>
+                    <h3>YOU Acneplus Spot Care Pro Serum 15gr</h3>
+                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 40.800</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="2">
+                <div class="product-image">
+                    <img src="img/produk (1).jpg" alt="Peeling Serum">
+                    <div class="discount-badge">-13%</div>
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Skincare</span></div>
+                    <p class="brand">Finally Found You</p>
+                    <h3>Finally Found You! Berry Deep Exfoliating Serum 20ml</h3>
+                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                   <div class="price">
+                        <span class="current-price">Rp 164.343</span>
+                        <span class="original-price">Rp 188.900</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="3">
+                <div class="product-image">
+                    <img src="img/produk (2).jpg" alt="Cushion">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">Emina</p>
+                    <h3>Emina 3in1 Skincare Cushion - Ringan, SPF 50 PA++++</h3>
+                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                    <p class="price">Rp 112.655</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="4">
+                <div class="product-image">
+                    <img src="img/img (4).webp" alt="Originote">
+                    <div class="discount-badge">-32%</div>
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">The Originote</p>
+                    <h3>The Originote Hyalucera Moisturizer 50ml</h3>
+                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 36.000</span>
+                        <span class="original-price">Rp 53.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="5">
+                <div class="product-image">
+                    <img src="img/produk (4).webp" alt="Eyeshadow">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Skincare</span></div>
+                    <p class="brand">IMPLORA</p>
+                    <h3>Implora Urban Eyeshadow Palette </h3>
+                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 39.500</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BARIS 2 (Produk 6-10) -->
+            <div class="product-card" data-id="6">
+                <div class="product-image">
+                    <img src="img/img (5).webp" alt="Lipstick">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">Made For Makeup</p>
+                    <h3>Mad For Makeup Tinted Glass H2Oil</h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
+                    <p class="price">Rp 107.280</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="7">
+                <div class="product-image">
+                    <img src="img/produk (6).webp" alt="cincin">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Aksesoris</span></div>
+                    <p class="brand">The Goats Dept</p>
+                    <h3>The Goats Dept - Eye Monster Ring Original </h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 32.500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="8">
+                <div class="product-image">
+                    <img src="img/produk (7).webp" alt="Jepitan Rambut">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Aksesoris</span></div>
+                    <p class="brand">Frasser</p>
+                    <h3>Jepit Aksesoris Rambut Wanita Gaya Korea</h3>
+                    <div class="rating">★★★★☆<span class="reviews">(4.5)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 3.790</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="9">
+                <div class="product-image">
+                    <img src="img/produk (8).webp" alt="Tone Up Cream">
+                    <div class="discount-badge">-52%</div>
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Kombinasi</span><span class="tag">Skincare</span></div>
+                    <p class="brand">Scora</p>
+                    <h3>SCORA Tone Up Cream Series 30 Gr </h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 32.900</span>
+                        <span class="original-price">Rp 68.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="10">
+                <div class="product-image">
+                    <img src="img/produk (9).webp" alt="Cream mask">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">LOREAL</p>
+                    <h3>L'Oreal Paris Revitalift Night Cream Skin Care</h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                    <p class="price">Rp 220.660</p>
+                </div>
+            </div>
+
+            <!-- BARIS 3 (Produk 11-15) -->
+            <div class="product-card" data-id="11">
+                <div class="product-image">
+                    <img src="img/produk (10).webp" alt="Moisturizer">
+                    <div class="discount-badge">-56%</div>
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Kering</span><span class="tag">Skincare</span></div>
+                    <p class="brand">ELFORMULA</p>
+                    <h3>ELFORMULA Moisture Gel </h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 125.000</span>
+                        <span class="original-price">Rp 285.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="12">
+                <div class="product-image">
+                    <img src="img/produk (11).webp" alt="Eyebrow Pencil">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">FOCALLURE</p>
+                    <h3>FOCALLURE Eyebrow Cream Gel waterproof </h3>
+                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                    <p class="price">Rp 37.900</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="13">
+                <div class="product-image">
+                    <img src="img/produk (12).webp" alt="Cushion">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">SKINTIFIC</p>
+                    <h3>SKINTIFIC -Matte Makeup Series |Matte Cushion</h3>
+                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                    <p class="price">Rp 107.100</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="14">
+                <div class="product-image">
+                    <img src="img/produk (13).webp" alt="Blush On">
+                    <div class="discount-badge">-27%</div>
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Makeup</span></div>
+                    <p class="brand">PIXY</p>
+                    <h3>PIXY End Matte Blush</h3>
+                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                    <div class="price">
+                        <span class="current-price">Rp 38.600</span>
+                        <span class="original-price">Rp 53.200</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-id="15">
+                <div class="product-image">
+                    <img src="img/produk (14).webp" alt="Gelang">
+                </div>
+                <div class="product-card-content">
+                    <div class="tags"><span class="tag">Aksesoris</span></div>
+                    <p class="brand">Chard Wake</p>
+                    <h3>Chard Wake Gelang Wanita Fashion Original </h3>
+                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                    <p class="price">Rp 106.000</p>
+                </div>
+            </div>
+        </div> <!-- TUTUP product-grid -->
+    </div>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+    <button class="nav-btn prev">Previous</button>
+    <button class="page-num active">1</button>
+    <button class="page-num">2</button>
+    <button class="page-num">3</button>
+    <button class="nav-btn next">Next</button>
+</div>
+
+    <script>
+        // Filter Toggle
+        document.getElementById('filterBtn').addEventListener('click', function() {
+            alert('Filter panel akan muncul di sini!');
+        });
+    </script>
+</body>
+</html>
+
+<footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-container">
+        <div class="footer-column brand">
+            <h3>SCHÖN</h3>
+            <p>Beauty e-commerce untuk menemukan produk yang sesuai dengan kebutuhan kulitmu</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>PRODUK</h4>
+            <ul>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Aksesoris</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>INFORMATION</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>NEWSLETTER</h4>
+            <input type="email" placeholder="[ Email input ]" class="email-input">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+    <div class="bottom-container">
+        <p>© 2026 SCHÖN. All rights reserved</p>
+        
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.44-.645 1.44-1.44-.645-1.44-1.44-1.44z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+</footer>
+
+    

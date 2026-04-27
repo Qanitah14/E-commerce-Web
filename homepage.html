@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHÖN - Beauty E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="Schön Logo" class="logo">
+                <span class="brand-name">Schön</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="homepage.html" class="nav-link">Home</a></li>
+                <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search search-icon"></i>
+                <i class="fas fa-user user-icon"></i>
+                <i class="fas fa-shopping-cart cart-icon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Wujudkan Kulit <span>Impianmu</span></h1>
+        <p class="hero-description">
+            Inovasi perawatan yang sesuai dengan kulitmu dengan formula khusus untuk setiap jenis kulit. 
+            Solusi terpercaya yang telah menjadi andalan ribuan pelanggan dalam merawat diri.
+        </p>
+        
+        <!-- 2 Tombol Horizontal -->
+        <div class="hero-buttons">
+            <a href="#" class="btn-buy">Belanja Sekarang</a>
+            <a href="#" class="btn-learn">Pelajari Lebih Lanjut</a>
+        </div>
+    </div>
+    
+    <div class="hero-image">
+        <img src="img/img (1).jpg" alt="Winter Skincare">
+    </div>
+</section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="badge">
+            <div class="badge-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>100% Original</h3>
+            <p>Produk dijamin asli</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <h3>Gratis Ongkir</h3>
+            <p>Min. belanja 200k</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">
+                <i class="fas fa-award"></i>
+            </div>
+            <h3>Award Winner</h3>
+            <p>Best Beauty Brand 2024</p>
+        </div>
+        <div class="badge">
+            <div class="badge-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h3>Loyalty Award</h3>
+            <p>Dapatkan poin setiap belanja</p>
+        </div>
+    </section>
+
+     <!-- Section Kategori Produk -->
+<section class="product-categories">
+    <div class="container">
+        <!-- Section Title + Deskripsi -->
+        <div class="section-header">
+            <h2 class="section-title">Kategori Produk</h2>
+            <p class="section-desc">
+                Jelajahi koleksi produk kecantikan kami,mulai dari skincare, makeup, hingga aksesoris. Temukan produk yang sesuai dengan jenis kulitmu dan wujudkan penampilan terbaikmu setiap hari
+            </p>
+        </div>
+
+        <!-- 3 Kategori -->
+        <div class="categories-grid">
+            <!-- Kategori 1: make up -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="img/img (24).jpg" alt="Wallets">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3 class="category-title">Make Up</h3>
+                            <span class="category-count">12 Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategori 2: skincare -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="img/img (23).jpg" alt="Belts">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3 class="category-title">Skincare</h3>
+                            <span class="category-count">8 Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kategori 3: Aksesoris -->
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="img/img (25).jpg" alt="Bags">
+                    <div class="category-overlay">
+                        <div class="category-content">
+                            <h3 class="category-title">Aksesoris</h3>
+                            <span class="category-count">15 Products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Jenis Kulit - UPDATED -->
+<section class="leather-types">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Cari Produk Berdasarkan Jenis Kulit</h2>
+            <p class="section-desc">
+                Temukan produk yang cocok untuk kebutuhan kulitmu
+            </p>
+        </div>
+
+        <!-- Jenis Kulit Grid -->
+        <div class="leather-grid">
+
+            <div class="leather-item">
+                <div class="leather-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" fill="#661c27"/>
+                        <path d="M18 28l14 14 18-18" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="leather-title">Normal</h3>
+            </div>
+
+            
+            <div class="leather-item">
+                <div class="leather-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" fill="#661c27"/>
+                        <path d="M18 28l14 14 18-18" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="leather-title">Kering</h3>
+            </div>
+
+            
+            <div class="leather-item">
+                <div class="leather-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" fill="#661c27"/>
+                        <path d="M18 28l14 14 18-18" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="leather-title">Berminyak</h3>
+            </div>
+
+            
+            <div class="leather-item">
+                <div class="leather-icon">
+                    <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="32" cy="32" r="28" fill="#661c27"/>
+                        <path d="M18 28l14 14 18-18" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 class="leather-title">Kombinasi</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Top Products - UPDATED STRUCTURE -->
+<section class="products">
+    <div class="container">
+        <!-- Products Header - Title + Desc LEFT, Button RIGHT -->
+        <div class="products-header">
+            <div class="header-left">
+                <h2 class="products-title">Produk Terlaris</h2>
+                <p class="products-desc">
+                    Temukan produk terbaik kami yang paling diminati pelanggan setia di seluruh Indonesia.
+                </p>
+            </div>
+            <a href="#" class="view-all">
+                Lihat Semua 
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="img/img (22).jpg" alt="Schön Moisturize">
+                <div class="product-info">
+                    <div class="product-brand">SCHÖN</div>
+                    <div class="product-type">Calm Down! Skinpair R-Cover Cream</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span>(4.9)</span>
+                    </div>
+                    <div class="product-price">Rp 150.000</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="img/img (8).jpg" alt="Schön Belt">
+                <div class="product-info">
+                    <div class="product-brand">SCHÖN</div>
+                    <div class="product-type"> SKINTIFIC 12% AHA BHA PHA LHA Peeling Solution 30ml</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span>(4.8)</span>
+                    </div>
+                    <div class="product-price">Rp 133.000</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="img/img (21).jpg" alt="Schön Bag">
+                <div class="product-info">
+                    <div class="product-brand">SCHÖN</div>
+                    <div class="product-type">GSKIN1004 Madagascar Centella Light Cleansing Oil 200ml</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span>(4.9)</span>
+                    </div>
+                    <div class="product-price">Rp 156.000</div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="img/img (7).webp" alt="Schön Cardholder">
+                <div class="product-info">
+                    <div class="product-brand">SCHÖN</div>
+                    <div class="product-type">Skintific All Day Perfect Serum Foundation</div>
+                    <div class="product-rating">
+                        <div class="stars">★★★★★</div>
+                        <span>(5.0)</span>
+                    </div>
+                    <div class="product-price">Rp 188.000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <!-- Section Title + Desc -->
+        <div class="section-header">
+            <h2 class="section-title">Testimoni Pelanggan</h2>
+            <p class="section-desc">
+                Dengar apa yang dikatakan pelanggan kami tentang pengalaman belanja di SCHÖN.
+            </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>"Barang... sekinker.. dsn bgs bgs,, ksukaan istri dan ank gdis sy mrk jd tmbh cntk bl d sn"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="img/profil (1).jpeg" alt="Sarah A.">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Om Broto</div>
+                        <div class="author-role">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>"ULALALALALALA beli skinker dsni mom bagus banget terpercaya deh.... incess approve"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="img/profil (3).jpeg" alt="Nituts">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Mommy Manjah</div>
+                        <div class="author-role">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>"Damn, suwer bagus banget beli disini, cepet, aman, terpercaya, gak bisa berkata kata deh. kalo kalian gak percaya pegang kepercayaan gue"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <img src="img/profil (2).jpeg" alt="Pak Mus">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">Bocah Banna</div>
+                        <div class="author-role">Verified Buyer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-container">
+        <div class="footer-column brand">
+            <h3>SCHÖN</h3>
+            <p>Beauty e-commerce untuk menemukan produk yang sesuai dengan kebutuhan kulitmu</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>PRODUK</h4>
+            <ul>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Aksesoris</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>INFORMATION</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>NEWSLETTER</h4>
+            <input type="email" placeholder="[ Email input ]" class="email-input">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+    <div class="bottom-container">
+        <p>© 2026 SCHÖN. All rights reserved</p>
+        
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.44-.645 1.44-1.44-.645-1.44-1.44-1.44z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+</footer>
+
+    
