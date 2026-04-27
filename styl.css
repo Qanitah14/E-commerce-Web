@@ -6,14 +6,14 @@
 }
 
 body {
-    font-family: 'serif', serif;
+    font-family:serif, serif;
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
     background: linear-gradient(180deg, #f4f2ef 0%, #f8f6f4 100%);
 }
 
-/* Header */
+
 .header {
     background: #F4F2EF;
     backdrop-filter: blur(10px);
@@ -128,14 +128,14 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Section */
+
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
     margin-top: 3rem;
     align-items: center;
 }
-/* Tombol 1: Belanja Sekarang (Persegi Panjang) */
+
 .btn-buy {
     background: linear-gradient(135deg, #661c27, #8b2e3a);
     color: white;
@@ -143,7 +143,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
-    border-radius: 12px;                    /* Persegi sedikit bulat */
+    border-radius: 12px;                     
     box-shadow: 0 15px 40px rgba(102,28,39,0.4);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     white-space: nowrap;
@@ -155,7 +155,7 @@ body {
     box-shadow: 0 25px 50px rgba(102,28,39,0.6);
 }
 
-/* Tombol 2: Pelajari Lebih Lanjut (Outline) */
+
 .btn-learn {
     color: #661c27;
     padding: 1.3rem 3rem;
@@ -195,8 +195,8 @@ body {
     line-height: 1.2;
     color: #000;
     margin-bottom: 2.5rem;
-    word-spacing: -0.8rem;  /* Rapatkan spasi */
-    letter-spacing: -0.5px; /* Rapatkan huruf */
+    word-spacing: -0.8rem;  
+    letter-spacing: -0.5px; 
 }
 
 .hero-title span {
@@ -249,22 +249,22 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
 }
 
-/* Trust Badges */
+
 .trust-badges {
-     background: rgba(255,255,255,0.98);         /* Putih semi transparan */
+     background: rgba(255,255,255,0.98);          
     backdrop-filter: blur(25px);
-    border-radius: 0 0 15px 15px;               /* Bawah melengkung, atas lurus */
-    padding: 3.5rem 5rem;                       /* Padding lebar */
+    border-radius: 0 0 15px 15px;               
+    padding: 3.5rem 5rem;                       
     width: 100%;
     max-width: none;
     margin-top: 3rem;
-    margin-bottom: 6 rem;                     /* Sentuh foto atas */
+    margin-bottom: 6 rem;                     
     box-shadow: 0 25px 100px rgba(0,0,0,0.15);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-wrap: nowrap;
-    gap: 10rem;                                  /* Jarak ikon besar */
+    gap: 10rem;                               
     justify-content: center;
     align-items: flex-start;
     
@@ -274,9 +274,9 @@ body {
      background: none;
     padding: 0;
     display: flex;
-    flex-direction: column;                     /* VERTIKAL */
+    flex-direction: column;                     
     align-items: center;
-    gap: 1rem;                                  /* Gap vertikal */
+    gap: 1rem;                                  
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     flex-shrink: 0;
@@ -288,7 +288,7 @@ body {
 }
 
 .badge-icon {
-    width: 85px;                                /* Lebih besar */
+    width: 85px;                                
     height: 85px;
     background: linear-gradient(135deg, #661c27 0%, #8b2e3a 100%);
     border-radius: 50%;
@@ -323,12 +323,11 @@ body {
     opacity: 0.9;
 }
 
-/* Section Kategori Produk - PERSIS PROTOTYPE */
 .product-categories {
     padding: 6rem 2rem;
     background: #ffffff;
     position: relative;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.05); /* Shadow garis atas */
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05); 
 }
 
 .product-categories::before {
@@ -347,10 +346,10 @@ body {
     margin: 0 auto;
 }
 
-/* Section Header */
+
 .section-header {
     text-align: center;
-    margin-bottom: 5rem; /* Jarak signifikan */
+    margin-bottom: 5rem; 
 }
 
 .section-title {
@@ -370,16 +369,16 @@ body {
     line-height: 1.7;
 }
 
-/* Categories Grid - 3 Kolom */
+
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6rem; /* Jarak signifikan antar kategori */
+    gap: 6rem; 
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Category Card */
+
 .category-card {
     aspect-ratio: 1;
     border-radius: 20px;
@@ -394,7 +393,7 @@ body {
     box-shadow: 0 30px 80px rgba(102,28,39,0.15);
 }
 
-/* Category Image */
+
 .category-image {
     width: 100%;
     height: 100%;
@@ -413,20 +412,20 @@ body {
     transform: scale(1.05);
 }
 
-/* Overlay Buram Hitam Bagian Bawah - PERSIS Figma */
+
 .category-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 40%; /* 40% dari bawah */
+    height: 40%; 
     background: linear-gradient(transparent, rgba(0,0,0,0.85));
     display: flex;
     align-items: flex-end;
     padding: 2.5rem 2rem 2rem;
 }
 
-/* Category Content */
+
 .category-content {
     color: white;
 }
@@ -445,7 +444,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
     .categories-grid {
         grid-template-columns: 1fr 1fr;
@@ -463,7 +462,7 @@ body {
         padding: 4rem 1.5rem;
     }
 }
-/* CSS UPDATED - Kotak proporsional + Ceklis semua + No desc */
+
 .leather-types {
     padding: 8rem 2rem 6rem;
     background: linear-gradient(135deg, #f8f6f4 0%, #fdfbfb 100%);
@@ -474,7 +473,7 @@ body {
     margin: 0 auto;
 }
 
-/* Section Header - TETAP SAMA */
+
 .section-header {
     text-align: center;
     margin-bottom: 1rem;
@@ -497,7 +496,7 @@ body {
     line-height: 1.7;
 }
 
-/* Leather Grid - TETAP SAMA */
+
 .leather-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -506,22 +505,22 @@ body {
     margin: 0 auto;
 }
 
-/* Leather Item - UPDATED: Lebih kecil & proporsional */
+
 .leather-item {
     text-align: center;
-    padding: 2rem 1rem; /* Dikurangi padding */
+    padding: 2rem 1rem; 
     background: white;
-    border-radius: 20px; /* Dikurangi sedikit */
+    border-radius: 20px; 
     box-shadow: 0 12px 35px rgba(0,0,0,0.08);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: 1px solid rgba(102,28,39,0.05);
-    height: 180px; /* Tinggi fixed proporsional */
+    height: 180px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem; /* Jarak icon ke title */
+    gap: 1rem; 
 }
 
 .leather-item:hover {
@@ -530,9 +529,9 @@ body {
     border-color: rgba(102,28,39,0.15);
 }
 
-/* Leather Icon - BESAR & CEKLIS SEMUA */
+
 .leather-icon {
-    width: 72px; /* Sedikit lebih besar */
+    width: 72px; 
     height: 72px;
     border-radius: 50%;
     display: flex;
@@ -546,16 +545,16 @@ body {
     height: 100%;
 }
 
-/* Leather Title - SAJA (No desc) */
+
 .leather-title {
-    font-size: 1.3rem; /* Sedikit lebih besar */
+    font-size: 1.3rem; 
     font-weight: 700;
     color: #661c27;
-    margin: 0rem; /* No margin */
+    margin: 0rem; 
     letter-spacing: -0.2px;
 }
 
-/* Responsive - UPDATED */
+
 @media (max-width: 1024px) {
     .leather-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -579,7 +578,7 @@ body {
     }
 }
 
-/* Products Section - PERSIS PROTOTYPE */
+
 .products {
     padding: 8rem 2rem 6rem;
     background: #ffffff;
@@ -590,17 +589,17 @@ body {
     margin: 0 auto;
 }
 
-/* Products Header - Title+Desc LEFT, Button RIGHT */
+
 .products-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 4rem;
-    margin-bottom: 6rem; /* Jarak signifikan */
+    margin-bottom: 6rem; 
     flex-wrap: wrap;
 }
 
-/* LEFT: Title + Desc (Pinggir KIRI) */
+
 .header-left {
     flex: 1;
     min-width: 400px;
@@ -622,11 +621,11 @@ body {
     line-height: 1.7;
     margin: 0;
     max-width: 500px;
-    text-align: left; /* LEFT ALIGN */
+    text-align: left; 
     
 }
 
-/* RIGHT: View All Button (Sejajar dengan DESC) */
+
 .view-all {
     display: flex;
     align-items: center;
@@ -640,8 +639,8 @@ body {
     border-radius: 12px;
     transition: all 0.3s ease;
     white-space: nowrap;
-    align-self: flex-end; /* Sejajar dengan desc */
-    margin-top: 2.5rem; /* Sejurusan dengan desc */
+    align-self: flex-end; 
+    margin-top: 2.5rem; 
 }
 
 .view-all:hover {
@@ -659,14 +658,14 @@ body {
     transform: translateX(4px);
 }
 
-/* Products Grid */
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem; /* Jarak signifikan */
+    gap: 3rem; 
 }
 
-/* Product Card */
+
 .product-card {
     background: white;
     border-radius: 24px;
@@ -692,7 +691,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Product Info */
+
 .product-info {
     padding: 2rem;
 }
@@ -738,7 +737,7 @@ body {
     color: #000;
 }
 
-/* Responsive - Judul lain TIDAK ikut pinggir */
+
 @media (max-width: 1024px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -777,7 +776,7 @@ body {
         gap: 2rem;
     }
 }
-/* Testimonials Section - PERSIS PROTOTYPE */
+
 .testimonials {
     padding: 8rem 2rem 6rem;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
@@ -788,7 +787,7 @@ body {
     margin: 0 auto;
 }
 
-/* Section Header */
+
 .section-header {
     text-align: center;
     margin-bottom: 6rem;
@@ -811,14 +810,14 @@ body {
     line-height: 1.7;
 }
 
-/* Testimonials Grid - 3 Kolom */
+
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
 
-/* Testimonial Card */
+
 .testimonial-card {
     background: #F4F2EF;
     border-radius: 24px;
@@ -836,7 +835,7 @@ body {
     box-shadow: 0 35px 80px rgba(102,28,39,0.12);
 }
 
-/* Testimonial Content */
+
 .testimonial-content {
     flex: 1;
     display: flex;
@@ -860,7 +859,7 @@ body {
     position: relative;
 }
 
-/* Testimonial Author */
+
 .testimonial-author {
     display: flex;
     align-items: center;
@@ -901,7 +900,7 @@ body {
     font-weight: 500;
 }
 
-/* Responsive */
+
 @media (max-width: 1024px) {
     .testimonials-grid {
         grid-template-columns: 1fr 1fr;
@@ -923,15 +922,15 @@ body {
         padding: 2.5rem 2rem;
     }
 }
-/* Reset & Base */
+
 .footer-divider {
-    height: 10px; /* Sesuaikan ketebalan sesuai kebutuhan */
-    background-color: #e0e0e0; /* Warna abu-abu */
-    margin-top:0px; /* Memberi jarak dengan konten di atasnya */
+    height: 10px; 
+    background-color: #e0e0e0; 
+    margin-top:0px; 
 }
 
 .footer {
-    background-color: #f4f2ef; /* Warna latar krem muda */
+    background-color: #f4f2ef; 
     color: #000;
     font-family: serif;
 }
@@ -945,17 +944,17 @@ body {
     gap: 40px;
 }
 
-/* Brand Section */
+
 .brand h3 { font-size: 2rem; margin-bottom: 20px; }
 .brand p { color: #000; line-height: 1.6; }
 
-/* Headings & Lists */
+
 h4 { font-size: 1.1rem; margin-bottom: 20px; letter-spacing: 1px; }
 ul { list-style: none; padding: 0; }
 ul li { margin-bottom: 12px; }
 a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
-/* Input Field */
+
 .email-input {
     width: 100%;
     padding: 12px;
@@ -965,9 +964,9 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     color: #888;
 }
 
-/* Footer Bottom (Strip Merah) */
+
 .footer-bottom {
-    background-color: #661c27; /* Warna merah marun */
+    background-color: #661c27; 
     color: white;
     padding: 20px 0;
 }
@@ -982,7 +981,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 }
 .bottom-container {
     display: flex;
-    justify-content: space-between; /* Menjaga teks di kiri, ikon di kanan */
+    justify-content: space-between; 
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -991,7 +990,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 .social-icons {
     display: flex;
-    gap: 20px; /* Jarak antar ikon */
+    gap: 20px; 
 }
 
 .social-icons a {
@@ -1001,14 +1000,14 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 }
 
 .social-icons a:hover {
-    opacity: 0.7; /* Efek saat kursor diarahkan ke ikon */
+    opacity: 0.7; 
 }
 
 /**********************************************************************************Batas Suci************************************************************************************/
 
 /************************************************************************************Produk************************************************************************************/
 
-/* PAGE HEADER - LAYOUT BARU SESUAI PERMINTAAN */
+
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -1107,7 +1106,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     box-shadow: 0 0 0 4px rgba(74, 4, 4, 0.1);
 }
 
-/* PRODUCT GRID */
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1173,11 +1172,11 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 .tags {
     display: flex;
     gap: 6px;
-    justify-content: flex-end; /* Memaksa tag ke kanan */
+    justify-content: flex-end; 
 }
 
 .tag {
-    background: #63191f; /* Warna marun sesuai gambar */
+    background: #63191f; 
     color: white;
     padding: 2px 8px;
     border-radius: 6px;
@@ -1239,9 +1238,9 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin: 60px 0; /* Memberi ruang atas dan bawah */
+    margin: 60px 0; 
     padding: 20px 0;
-    border-top: 1px solid #e2e8f0; /* Opsional: jika ingin ada batas di atas pagination */
+    border-top: 1px solid #e2e8f0; 
 }
 
 .nav-btn, .page-num {
@@ -1256,18 +1255,18 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 }
 
 .page-num.active {
-    background-color: #63191f; /* Warna Marun */
+    background-color: #63191f; 
     color: #ffffff;
     border-color: #63191f;
 }
 
-/* Efek hover untuk tombol */
+
 .nav-btn:hover:not(:disabled), 
 .page-num:hover {
     background-color: #f0f0f0;
 }
 
-/* RESPONSIVE DESIGN */
+
 @media (max-width: 1200px) {
     .product-grid {
         grid-template-columns: repeat(4, 1fr);
@@ -1378,7 +1377,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     }
 }
 
-/* Additional fixes for perfect alignment */
+
 @media (max-width: 768px) {
     .pagination .page-numbers {
         justify-content: center;
@@ -1386,7 +1385,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     }
 }
 
-/* Ensure tags wrap properly */
+
 .tags {
     max-width: 100%;
 }
@@ -1395,7 +1394,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     white-space: nowrap;
 }
 
-/* Smooth transitions for all interactive elements */
+
 .product-card,
 .nav-btn,
 .page-num {
@@ -1406,9 +1405,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 /************************************************************************************Edukasi************************************************************************************/
 
-/* ========================================
-   HALAMAN EDUKASI - PREFIX .edukasi-page
-   ======================================== */
+
 
 :root {
     --maroon: #661c27;
@@ -1427,7 +1424,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     padding: 60px 0; 
 }
 
-/* Hero Section */
+
 .edukasi { 
     background-color: #661c27; 
     overflow: hidden; }
@@ -1470,7 +1467,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     object-position: right center;
 }
 .edukasi-actions { display: flex; gap: 20px; }
-/* BUTTON BASE */
+
 .btn {
     padding: 18px 36px;
     text-decoration: none;
@@ -1483,7 +1480,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     position: relative;
 }
 
-/* BUTTON FILLED - NO GLOW */
+
 .btn-filled { 
     border: 2px solid rgba(255,255,255,0.9);
     color: white; 
@@ -1492,20 +1489,20 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 .btn-filled:hover {
     border-color: white;
-    background: rgb(255, 255, 255);  /* White full */
-    color: var(--maroon);            /* Text maroon */
+    background: rgb(255, 255, 255);  
+    color: var(--maroon);            
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .btn-filled:active {
-    background: #f0f0f0;           /* ← Background lebih gelap */
-    color: #4a1417;                /* ← Text maroon GELAP */
+    background: #f0f0f0;           
+    color: #4a1417;                
     transform: translateY(-1px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
-/* BUTTON OUTLINE - NO GLOW */
+
 .btn-outline { 
     border: 2px solid rgba(255,255,255,0.9);
     color: white; 
@@ -1514,26 +1511,26 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 .btn-outline:hover {
     border-color: white;
-    background: rgb(255, 255, 255);  /* White full */
-    color: var(--maroon);            /* Text maroon */
+    background: rgb(255, 255, 255);  
+    color: var(--maroon);            
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .btn-outline:active {
-    background: rgba(255,255,255,0.95);  /* White sedikit transparan */
-    color: var(--maroon);                /* Text maroon */
-    border-color: rgba(99,25,29,0.8);    /* Border maroon */
+    background: rgba(255,255,255,0.95);  
+    color: var(--maroon);                
+    border-color: rgba(99,25,29,0.8);    
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* HAPUS EFEK RIPPLE & BLUR */
+
 .btn::before {
     display: none;
 }
 
-/* Section Title & Featured */
+
 .section-title { 
     font-size: 30px; 
     margin-bottom: 30px; 
@@ -1596,7 +1593,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     overflow: hidden; 
 }
 
-/* List Section (Skincare & Makeup) */
+
 .list-section { padding: 60px 0; background-color: #ffffff; }
 .list-container {
     max-width: 1200px;
@@ -1678,7 +1675,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     font-weight: 500;
 }
 
-/* Responsive */
+
 @media (max-width: 1200px) {
     .featured-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1708,7 +1705,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 /************************************************************************************Produk************************************************************************************/
 
-/* About Section */
+
 .about { 
     background-color: #661c27; 
     color: white; 
@@ -1728,7 +1725,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     opacity: 0.9; 
 }
 
-/* Section Tentang */
+
 .tentang { 
     padding: 80px 20px; 
     background: #F4F2EF; 
@@ -1749,11 +1746,11 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
         border: 2px solid #ffffff
 }
 .tentang-img-box img { 
-     width: 140px;       /* ← BESAR 30px */
-    height: 170px;      /* ← BESAR 40px */
+     width: 140px;       
+    height: 170px;     
     object-fit: cover; 
 } 
-/* Placeholder logo */
+
 .tentang-content { 
     flex: 1.5; 
 }
@@ -1771,7 +1768,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     text-align: justify; 
 }
 
-/* Tim Section - Latar Belakang Abu-abu seperti di gambar */
+
 .tim-section { 
     padding: 50px 20px; 
     background-color: #f4f2ef;
@@ -1798,14 +1795,14 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 .row-3 { grid-template-columns: repeat(3, 1fr); }
 .row-2 { grid-template-columns: repeat(2, 1fr); max-width: 730px; margin-left: auto; margin-right: auto; }
 
-/* Card Styling sesuai gambar */
+
 .foto { background: white; border: 1px solid #eee; overflow: hidden; }
 .foto img { width: 100%; height: 350px; object-fit: cover; display: block;}
 .foto-info { padding: 20px; text-align: center; }
 .foto-info h4 { font-size: 20px; font-family: serif; margin-bottom: 5px; }
 .foto-info p { font-size: 13px; font-family: serif; color: #888; }
 
-/* CTA Section */
+
 .capt { background-color: #661c27; color: white; text-align: center; padding: 60px 20px; }
 .capt h3 { font-size: 25px; margin-bottom: 15px; font-family: serif; }
 .capt p { font-size: 18px; margin-bottom: 28px; opacity: 0.8; font-family: serif; }
@@ -1817,13 +1814,13 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     box-shadow: 0 10px 25px rgba(99,25,29,0.4);
 }
 
-/* FOCUS STATE */
+
 .capt button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(99,25,29,0.2);
 }
 
-/* ACTIVE STATE */
+
 .capt button:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 15px rgba(99,25,29,0.3);

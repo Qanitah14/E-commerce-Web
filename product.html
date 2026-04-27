@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCHÖN - Beauty E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styl.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    
     <header class="header">
         <nav class="navbar">
             <div class="nav-brand">
@@ -17,10 +17,10 @@
                 <span class="brand-name">Schön</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="homepage.html" class="nav-link">Home</a></li>
-                <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
-                <li><a href="produk.html" class="nav-link">Produk</a></li>
-                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="education.html" class="nav-link">Edukasi</a></li>
+                <li><a href="product.html" class="nav-link">Produk</a></li>
+                <li><a href="aboutt.html" class="nav-link">Tentang Kami</a></li>
             </ul>
             <div class="nav-icons">
                 <i class="fas fa-search search-icon"></i>
@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    <!-- MAIN CONTENT -->
+   
     <main class="products-page">
         <div class="container">
             <!-- PAGE HEADER - EXACT LAYOUT BARU -->
@@ -63,7 +63,6 @@
             </div>
 
 <div class="product-grid" id="product-grid">
-            <!-- BARIS 1 (Produk 1-5) -->
         <div class="product-card" data-id="1">
                 <div class="product-image">
                     <img src="img/produk.jpg" alt="Acne Care">
@@ -141,7 +140,6 @@
                 </div>
             </div>
 
-            <!-- BARIS 2 (Produk 6-10) -->
             <div class="product-card" data-id="6">
                 <div class="product-image">
                     <img src="img/img (5).webp" alt="Lipstick">
@@ -215,7 +213,7 @@
                 </div>
             </div>
 
-            <!-- BARIS 3 (Produk 11-15) -->
+            
             <div class="product-card" data-id="11">
                 <div class="product-image">
                     <img src="img/produk (10).webp" alt="Moisturizer">
@@ -288,10 +286,10 @@
                     <p class="price">Rp 106.000</p>
                 </div>
             </div>
-        </div> <!-- TUTUP product-grid -->
+        </div> 
     </div>
 
-            <!-- PAGINATION -->
+            
             <div class="pagination">
     <button class="nav-btn prev">Previous</button>
     <button class="page-num active">1</button>
@@ -301,7 +299,6 @@
 </div>
 
     <script>
-        // Filter Toggle
         document.getElementById('filterBtn').addEventListener('click', function() {
             alert('Filter panel akan muncul di sini!');
         });
