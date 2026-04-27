@@ -1110,8 +1110,8 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 /* PRODUCT GRID */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
     margin-bottom: 40px; 
 }
 
