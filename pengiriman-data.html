@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHÖN - Beauty E-commerce</title>
+    <link rel="stylesheet" href="styled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="Schön Logo" class="logo">
+                <span class="brand-name">Schön</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+            </ul>
+             <div class="nav-icons">
+                <i class="fas fa-search search-icon"></i>
+                <i><a href="schon_profile.html" class="fas fa-user user-icon"></a></i>
+                <i><a href="keranjang.html" class="fas fa-shopping-cart cart-icon"></a></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+<div class="checkout-main-content">
+    <!-- Judul Halaman -->
+    <h2 class="main-title">PEMESANAN</h2>
+
+    <!-- Stepper Navigasi -->
+    <div class="checkout-stepper">
+    <div class="step-item active"><a href="pengiriman-data.html">Data Pengiriman</a></div>
+    <div class="step-item"><a href="kurir(A).html">Pilih Kurir</a></div>
+    <div class="step-item"><a href="pengiriman-pembayaran.html">Metode Pembayaran</a></div>
+    <div class="step-item"><a href="pengiriman-konfirmasi.html">Konfirmasi</a></div>
+</div>
+
+    <!-- Konten Utama -->
+    <div class="checkout-grid">
+        
+        <!-- SISI KIRI: DATA PENGIRIMAN -->
+        <div class="shipping-section">
+            <h3 class="inner-title">DATA PENGIRIMAN</h3>
+            <form class="shipping-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nomor Telepon</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Alamat Lengkap</label>
+                    <textarea rows="4"></textarea>
+                </div>
+
+                <div class="form-row triple">
+    <div class="form-group">
+        <label>Provinsi</label>
+        <select name="province" required>
+            <option value="">Pilih Provinsi</option>
+            <option value="dkijakarta">DKI Jakarta</option>
+            <option value="jabar">Jawa Barat</option>
+            <option value="jateng">Jawa Tengah</option>
+            <option value="jatim">Jawa Timur</option>
+            <option value="diy">DI Yogyakarta</option>
+            <option value="sumut">Sumatera Utara</option>
+            <option value="sumbar">Sumatera Barat</option>
+            <option value="sumsel">Sumatera Selatan</option>
+            <option value="kaltim">Kalimantan Timur</option>
+            <option value="kalsel">Kalimantan Selatan</option>
+            <option value="sulsel">Sulawesi Selatan</option>
+            <option value="sulut">Sulawesi Utara</option>
+            <option value="bali">Bali</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>Kota/Kabupaten</label>
+        <select name="city" required>
+            <option value="">Pilih Kota/Kabupaten</option>
+            
+            <!-- DKI JAKARTA -->
+            <optgroup label="DKI Jakarta">
+                <option value="jakarta-pusat">Jakarta Pusat</option>
+                <option value="jakarta-utara">Jakarta Utara</option>
+                <option value="jakarta-barat">Jakarta Barat</option>
+                <option value="jakarta-selatan">Jakarta Selatan</option>
+                <option value="jakarta-timur">Jakarta Timur</option>
+                <option value="kepulauan-seribu">Kepulauan Seribu</option>
+            </optgroup>
+            
+            <!-- JAWA BARAT -->
+            <optgroup label="Jawa Barat">
+                <option value="bandung">Bandung</option>
+                <option value="bekasi">Bekasi</option>
+                <option value="depok">Depok</option>
+                <option value="tangerang">Tangerang</option>
+                <option value="tangerang-selatan">Tangerang Selatan</option>
+                <option value="bogor">Bogor</option>
+                <option value="cimahi">Cimahi</option>
+                <option value="cirebon">Cirebon</option>
+                <option value="karawang">Karawang</option>
+            </optgroup>
+            
+            <!-- JAWA TENGAH -->
+            <optgroup label="Jawa Tengah">
+                <option value="semarang">Semarang</option>
+                <option value="surakarta">Surakarta (Solo)</option>
+                <option value="pekalongan">Pekalongan</option>
+                <option value="salatiga">Salatiga</option>
+                <option value="tegal">Tegal</option>
+                <option value="magelang">Magelang</option>
+            </optgroup>
+            
+            <!-- JAWA TIMUR -->
+            <optgroup label="Jawa Timur">
+                <option value="surabaya">Surabaya</option>
+                <option value="malang">Malang</option>
+                <option value="sidoarjo">Sidoarjo</option>
+                <option value="gresik">Gresik</option>
+                <option value="madiun">Madiun</option>
+                <option value="kediri">Kediri</option>
+                <option value="probolinggo">Probolinggo</option>
+            </optgroup>
+            
+            <!-- DIY YOGYAKARTA -->
+            <optgroup label="DI Yogyakarta">
+                <option value="yogyakarta">Yogyakarta</option>
+                <option value="sleman">Sleman</option>
+                <option value="bantul">Bantul</option>
+            </optgroup>
+            
+            <!-- SUMATERA UTARA -->
+            <optgroup label="Sumatera Utara">
+                <option value="medan">Medan</option>
+                <option value="binjai">Binjai</option>
+            </optgroup>
+            
+            <!-- SUMATERA BARAT -->
+            <optgroup label="Sumatera Barat">
+                <option value="padang">Padang</option>
+                <option value="bukittinggi">Bukittinggi</option>
+            </optgroup>
+            
+            <!-- SUMATERA SELATAN -->
+            <optgroup label="Sumatera Selatan">
+                <option value="palembang">Palembang</option>
+            </optgroup>
+            
+            <!-- KALIMANTAN -->
+            <optgroup label="Kalimantan">
+                <option value="balikpapan">Balikpapan</option>
+                <option value="samarinda">Samarinda</option>
+                <option value="banjarmasin">Banjarmasin</option>
+            </optgroup>
+            
+            <!-- SULAWESI -->
+            <optgroup label="Sulawesi">
+                <option value="makassar">Makassar</option>
+                <option value="manado">Manado</option>
+            </optgroup>
+            
+            <!-- BALI -->
+            <optgroup label="Bali">
+                <option value="denpasar">Denpasar</option>
+            </optgroup>
+        </select>
+    </div>
+                    <div class="form-group">
+                        <label>Kode Pos</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="save-main">
+                    <label for="save-main">Simpan sebagai alamat utama</label>
+                </div>
+
+                <div class="form-action-btns">
+    <a href="keranjang.html" class="btn-cancel">Kembali</a>
+    <a href="kurir(A).html" class="btn-pay">Lanjut Ke Pembayaran</a>
+</div>
+
+            </form>
+        </div>
+
+        <!-- SISI KANAN: RINGKASAN PESANAN -->
+        <div class="order-summary-box">
+            <h3 class="inner-title">RINGKASAN PESANAN</h3>
+            <div class="summary-list">
+                <div class="summary-product">
+                    <div class="prod-desc">
+                        <p class="prod-name">Advanced Snail 92 All in One Cream</p>
+                        <p class="prod-qty">Qty: 1</p>
+                    </div>
+                    <p class="prod-price">Rp. 246.750</p>
+                </div>
+                <div class="summary-product">
+                    <div class="prod-desc">
+                        <p class="prod-name">Essence Toner, 100ml</p>
+                        <p class="prod-qty">Qty: 2</p>
+                    </div>
+                    <p class="prod-price">Rp. 272.000</p>
+                </div>
+                <div class="summary-product">
+                    <div class="prod-desc">
+                        <p class="prod-name">Tinted Glass H2Oil</p>
+                        <p class="prod-qty">Qty: 1</p>
+                    </div>
+                    <p class="prod-price">Rp. 116.220</p>
+                </div>
+            </div>
+
+            <hr class="divider-line">
+            
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span class="bold">Rp. 588.670</span>
+            </div>
+            
+            <hr class="divider-line">
+
+            <div class="summary-row total-row">
+                <span>TOTAL</span>
+                <span>Rp. 588.670</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-container">
+        <div class="footer-column brand">
+            <h3>SCHÖN</h3>
+            <p>Beauty e-commerce untuk menemukan produk yang sesuai dengan kebutuhan kulitmu</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>PRODUK</h4>
+            <ul>
+                <li><a href="#">Skincare</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Aksesoris</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>INFORMATION</h4>
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>NEWSLETTER</h4>
+            <input type="email" placeholder="[ Email input ]" class="email-input">
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+    <div class="bottom-container">
+        <p>© 2026 SCHÖN. All rights reserved</p>
+        
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.44-.645 1.44-1.44-.645-1.44-1.44-1.44z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874V12h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+</footer>

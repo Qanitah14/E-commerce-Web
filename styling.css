@@ -1012,7 +1012,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 16px 0 24px 0;
+    margin: 48px 0 56px 0;
     gap: 40px;
 }
 
@@ -1112,8 +1112,6 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
     margin-bottom: 40px; 
-    align-items: stretch;
-    align-content: stretch;
 }
 
 .product-card {
@@ -1125,7 +1123,6 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     cursor: pointer;
     border: 1px solid #f8fafc;
     position: relative;
-    height: 100%;
 }
 
 .product-card:hover {
@@ -1235,8 +1232,6 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     color: #94a3b8;
     text-decoration: line-through;
 }
-
-/* pagnation produk*/
 
 .pagination {
     display: flex;
@@ -1395,6 +1390,14 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     }
 }
 
+@media (max-width: 768px) {
+    .pagination .page-numbers {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
 .tags {
     max-width: 100%;
 }
@@ -1409,7 +1412,6 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 .page-num {
     will-change: transform, box-shadow;
 }
-
 
 /**********************************************************************************Batas Suci************************************************************************************/
 
@@ -1535,6 +1537,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+
 .btn::before {
     display: none;
 }
@@ -1545,7 +1548,6 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     margin-bottom: 30px; 
     color: #661c27; 
     font-weight: 700; 
-    margin-top: 30px;
 }
 .featured-grid { 
     display: grid; 
@@ -1569,6 +1571,13 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     height: 100%; 
     object-fit: cover; 
     transition: 0.4s; 
+}
+.date {
+    display: block;        /* Memastikan tanggal berada di baris baru */
+    color: #888888;       /* Mengubah warna menjadi abu-abu muda */
+    font-size: 0.85rem;    /* Memperkecil ukuran font sedikit */
+    margin-top: 10px;      /* Memberikan jarak dengan teks di atasnya */
+    font-weight: normal;   /* Memastikan teks tidak tebal (bold) */
 }
 .card:hover img { transform: scale(1.05); }
 .card-content { padding: 20px; }
@@ -1604,11 +1613,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 }
 
 
-.list-section { 
-    padding: 60px 0; 
-    background-color: #ffffff; 
-    margin-top: 60px;
-}
+.list-section { padding: 60px 0; background-color: #ffffff; }
 .list-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -1717,7 +1722,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 /**********************************************************************************Batas Suci************************************************************************************/
 
-/************************************************************************************About************************************************************************************/
+/************************************************************************************Produk************************************************************************************/
 
 
 .about { 
@@ -1738,6 +1743,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     line-height: 1.6; 
     opacity: 0.9; 
 }
+
 
 .tentang { 
     padding: 80px 20px; 
@@ -1819,21 +1825,8 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 .capt { background-color: #661c27; color: white; text-align: center; padding: 60px 20px; }
 .capt h3 { font-size: 25px; margin-bottom: 15px; font-family: serif; }
 .capt p { font-size: 18px; margin-bottom: 28px; opacity: 0.8; font-family: serif; }
-.capt-button { 
-    background:#661c27; 
-    color: #ffffff; 
-    border:1px solid #ffffff7d; 
-    padding: 10px 35px; 
-    font-size: 18px; 
-    font-weight: bold; 
-    cursor: pointer; 
-    border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.capt-button:hover {
+.capt button { background:#661c27; color: #ffffff; border:1px solid #ffffff7d ; padding: 10px 35px; font-size: 18px; font-weight: bold; cursor: pointer; border-radius: 6px; }
+.capt button:hover {
     background: #ffffff;
     color: #661c27;
     transform: translateY(-3px);
@@ -1855,285 +1848,371 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 /**********************************************************************************Batas Suci************************************************************************************/
 
-/************************************************************************************filter************************************************************************************/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/************************************************************************************Tugas nya Syifa************************************************************************************/
+/* Update Root & Global agar lebih presisi sesuai gambar */
+:root {
+    --maroon: #5D1F24; /* Burgundy lebih gelap sesuai gambar */
+    --text-dark: #1A1A1A;
+    --text-gray: #666;
+    --bg-light: #F9F9F9;
 }
 
-body {
-    font-family: 'serif', serif;
+/* Hero Section Edukasi Skincare 1 */
+.EdSkincare-hero {
+    background-color: var(--maroon);
+    padding: 60px 0;
+    color: white;
+}
+.EdSkin-content {
+    max-width: 1200px; /* Batasi lebar agar sejajar dengan grid artikel */
+    margin: 0 auto;    /* Ketengahkan kontainer */
+    padding: 0 20px;   /* Jarak aman agar teks tidak menyentuh layar di HP */
+}
+
+.EdSkin-content h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 20px; /* Tambahkan jarak bawah ke paragraf */
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Jarak antara icon botol dan teks */
+}
+
+.EdSkin-content p {
+    font-size: 24px; /* Perkecil ukuran font agar proporsional */
     line-height: 1.6;
+    max-width: 100%; /* Batasi lebar paragraf agar enak dibaca */
+    margin-bottom: 0;  /* Hilangkan margin bawah yang terlalu besar */
+    opacity: 0.9;
+    text-align: justify;  /* Gunakan rata kiri agar terlihat lebih alami */
+}
+
+/* Navigasi Kembali */
+.back-navigation, .back-bar {
+    margin-top: 30px;    /* Memberi jarak luar di atas tulisan */
+    margin-bottom: 30px; /* Memberi jarak ke bawah (ke arah artikel) */
+    padding-left: 20px;  /* Memberi jarak dari sisi kiri layar */
+}
+
+.back-link {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* Grid Artikel V2 (Sesuai Gambar) */
+.article-main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Kolom Desktop */
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.article-card-v2 {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-v2 {
+    width: 100%;
+    height: 220px;
+}
+
+.card-img-v2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-info h3 {
+    font-size: 16px;
+    margin: 12px 0;
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+.card-info p {
+    font-size: 13px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.card-info .date {
+    font-size: 11px;
+    color: #999;
+    margin-top: auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+.page-num, .nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    height: 44px;
+    padding: 0 12px;
+    border: 2px solid #e5e5e5;
+    border-radius: 8px;
+    background: white;
     color: #333;
-    background-color: #f8f9fa;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.page-num:hover, .nav-btn:hover {
+    background: #661c27;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.page-num.active {
+    background: #661c27;
+    color: white;
+    border-color: #661c27;
+}
+
+.nav-btn {
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+.nav-btn.prev {
+    border-radius: 25px 8px 8px 25px;
+}
+
+.nav-btn.next {
+    border-radius: 8px 25px 25px 8px;
+}
+
+/* Responsive Fix */
+@media (max-width: 992px) {
+    .article-main-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .article-main-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 { font-size: 24px; }
+}
+
+/* Detail Artikel Skincare*/
+/* --- Global Article Styles --- */
+.article-page {
+    background-color: #f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1000px; 
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* PRODUCTS LAYOUT - GRID */
-.products-layout {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 40px;
-    min-height: 600px;
+/* Back Bar */
+.back-bar {
+    background-color: #5D1F24; 
+    padding: 12px 0;
+    margin-top: 0 !important;
 }
 
-/* FILTER SIDEBAR */
-.filter-toggle {
-    display: none;
+.btn-back {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
 }
 
-.filter-sidebar {
+/* Article Layout */
+.article-container {
     background: white;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-    height: fit-content;
-    position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
 }
 
-.filter-close {
+.article-title {
+    text-align: center; /* Membuat teks judul berada di tengah secara horizontal */
+    font-family: 'Playfair Display', serif; /* Menggunakan font sesuai prototype */
+    font-size: 32px; /* Menyesuaikan ukuran teks[cite: 2] */
+    margin: 20px auto; /* Memberi jarak atas-bawah dan memastikan elemen berada di tengah[cite: 2] */
+    line-height: 1.4; /* Memberi ruang antar baris teks agar nyaman dibaca[cite: 2] */
+    max-width: 800px; /* Membatasi lebar agar judul tidak terlalu memanjang ke samping[cite: 2] */
+}
+
+.article-main-image {
+    width: 100%;
+    max-width: 550px; /* Atur angka ini (misal 600px atau 700px) untuk mengecilkan foto */
+    margin: 0 auto 30px auto; /* "auto" kiri-kanan membuat foto berada di tengah */
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.article-main-image img {
+    width: 100%;
+    height: auto;
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 20px;
-    color: #999;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
+    object-fit: cover;
+}
+
+/* Text Content */
+.article-body p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.article-body h3 {
+    font-size: 24px;
+    margin: 25px 0 15px;
+    color: #5D1F24;
+}
+
+.article-body ol, .article-body ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.article-body li {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Tags & Icons */
+.article-tags {
+    margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: all 0.3s;
+    gap: 10px;
 }
 
-.filter-close:hover {
-    background: #f8f9fa;
-    color: #333;
+.tag {
+    background: #5D1F24;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffffff;
 }
 
-.filter-sections {
-    margin-top: 10px;
+.divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 40px 0;
 }
 
-.filter-group {
-    margin-bottom: 30px;
+/* Recommendation Section */
+.section-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.filter-title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 15px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-.filter-options {
+.product-card-small {
+    display: flex;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.prod-img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.prod-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prod-detail {
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-}
-
-.filter-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    padding: 8px 0;
-    font-weight: 500;
-    color: #555;
-    transition: color 0.3s;
-}
-
-.filter-item:hover {
-    color: #661c27;
-}
-
-.filter-item input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    accent-color: #661c27;
-    cursor: pointer;
-}
-
-/* PRICE FILTER */
-.price-group {
-    margin-top: 10px;
-}
-
-.price-range {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-}
-
-.price-slider {
-    flex: 1;
-    height: 6px;
-    border-radius: 3px;
-    background: #e9ecef;
-    outline: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-
-.price-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #661c27;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(212,165,116,0.4);
-}
-
-.price-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #661c27;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 6px rgba(212,165,116,0.4);
-}
-
-.price-display {
-    font-size: 14px;
-    color: #666;
-    font-weight: 500;
-}
-
-.filter-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.filter-btn {
-    flex: 1;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding: 12px;
-    border-radius: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s;
-    border: 2px solid transparent;
 }
 
-.reset-btn {
-    background: #f8f9fa;
-    color: #666;
-    border-color: #e9ecef;
+.prod-detail .brand {
+    font-size: 10px;
+    color: #999;
+    text-transform: uppercase;
 }
 
-.reset-btn:hover {
-    background: #e9ecef;
+.prod-detail h4 {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.4;
 }
 
-.apply-btn {
-    background: #661c27;
+.prod-detail .price {
+    font-weight: 700;
+    color: #5D1F24;
+    margin: 5px 0;
+}
+
+.btn-cart {
+    background: #5D1F24;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+    cursor: pointer;
 }
 
-.apply-btn:hover {
-    background: #a2606a;
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    .article-title { font-size: 22px; }
+    .article-container { padding: 20px 15px; }
+    .product-card-small { flex-direction: column; }
+    .prod-img { width: 100%; height: 150px; }
+    .prod-detail { padding: 15px 0 0; }
 }
 
-/* RESPONSIVE */
-@media (max-width: 1200px) {
-    .products-layout {
-        grid-template-columns:1fr;
-        gap: 30px;
-    }
-    
-    .filter-sidebar {
-        order: 2;
-        position: static;
-        max-height: none;
-    }
-}
 
-@media (max-width: 768px) {
-    .page-header {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-    }
-    
-    .header-left-controls {
-        justify-content: space-between;
-    }
-    
-    .products-page {
-        padding: 40px 0;
-    }
-}
-
-/* FILTER FUNCTIONALITY */
-.product-card.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    height: 0;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-/* FILTER CONTROL - AKTIF DAN TARGET TAG */
-.filter-control {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* SKINCARE FILTER */
-#tag-skincare:checked ~ .filter-layout .catalog-grid .product-card:not([data-tags*="Skincare"]) {
-    display: none !important;
-}
-
-#tag-skincare:checked ~ .filter-layout .catalog-grid .product-card[data-tags*="Skincare"] {
-    display: block !important;
-}
-
-/* MAKEUP FILTER */
-#tag-makeup:checked ~ .filter-layout .catalog-grid .product-card:not([data-tags*="Makeup"]) {
-    display: none !important;
-}
-
-#tag-makeup:checked ~ .filter-layout .catalog-grid .product-card[data-tags*="Makeup"] {
-    display: block !important;
-}
-
-/* AKSESORIS FILTER */
-#tag-aksesoris:checked ~ .filter-layout .catalog-grid .product-card:not([data-tags*="Aksesoris"]) {
-    display: none !important;
-}
-
-#tag-aksesoris:checked ~ .filter-layout .catalog-grid .product-card[data-tags*="Aksesoris"] {
-    display: block !important;
-}
-
-/* RESET FILTER */
-#filterReset:checked ~ .filter-layout .catalog-grid .product-card {
-    display: block !important;
-}
-
-/* DEFAULT */
-.catalog-grid .product-card {
-    display: block;
-}
 

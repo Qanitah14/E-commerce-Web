@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHÖN - Beauty E-commerce</title>
+    <link rel="stylesheet" href="styled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="Schön Logo" class="logo">
+                <span class="brand-name">Schön</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
+                <li><a href="produk.html" class="nav-link">Produk</a></li>
+                <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search search-icon"></i>
+                <a href="schon_profile.html" class="cart-icon">
+                    <i class="fas fa-user user-icon"></i>
+                </a>
+                <a href="keranjang.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CHECKOUT CONTENT -->
+    <div class="checkout-main-content">
+        <!-- Judul Halaman -->
+        <h2 class="main-title">PEMESANAN</h2>
+
+        <!-- Stepper Navigasi -->
+        <div class="checkout-stepper">
+            <div class="step-item"><a href="pengiriman-data.html">Data Pengiriman</a></div>
+            <div class="step-item active"><a href="kurir(D).html">Pilih Kurir</a></div>
+            <div class="step-item"><a href="pengiriman-pembayaran.html">Metode Pembayaran</a></div>
+            <div class="step-item"><a href="pengiriman-konfirmasi.html">Konfirmasi</a></div>
+        </div>
+
+        <!-- CHECKOUT GRID -->
+        <div class="checkout-grid">
+            <div class="checkout-grid-extended">
+                
+                <!-- KIRI: PILIH KURIR -->
+                <div class="courier-section-wide">
+                    <h3 class="inner-title">PILIH KURIR</h3>
+                    
+                    <form class="courier-selection-form">
+                        <!-- JNE -->
+                        <a href="kurir(A).html" class="courier-nav-link">
+                            <label class="courier-option-card">
+                                <span class="radio-custom-circle"></span>
+                                <div class="method-details">
+                                    <p class="method-name">JNE Reguler</p>
+                                    <p class="method-eta">Estimasi: 2-3 hari</p>
+                                </div>
+                                <p class="method-cost">Rp. 15.000</p>
+                            </label>
+                        </a>
+
+                        <!-- J&T -->
+                        <a href="kurir(B).html" class="courier-nav-link">
+                            <label class="courier-option-card">
+                                <span class="radio-custom-circle"></span>
+                                <div class="method-details">
+                                    <p class="method-name">J&T Express</p>
+                                    <p class="method-eta">Estimasi: 2-3 hari</p>
+                                </div>
+                                <p class="method-cost">Rp. 12.000</p>
+                            </label>
+                        </a>
+
+                        <!-- SiCepat -->
+                        <a href="kurir(C).html" class="courier-nav-link">
+                            <label class="courier-option-card">
+                                <span class="radio-custom-circle"></span>
+                                <div class="method-details">
+                                    <p class="method-name">SiCepat</p>
+                                    <p class="method-eta">Estimasi: 1-2 hari</p>
+                                </div>
+                                <p class="method-cost">Rp. 18.000</p>
+                            </label>
+                        </a>
+
+                        <!-- AntarAja -->
+                        <a href="kurir(D).html" class="courier-nav-link">
+                            <label class="courier-option-card">
+                                <input type="radio" name="shipping" checked>
+                                <span class="radio-custom-circle active"></span>
+                                <div class="method-details">
+                                    <p class="method-name">AntarAja</p>
+                                    <p class="method-eta">Estimasi: 2-4 hari</p>
+                                </div>
+                                <p class="method-cost">Rp. 10.000</p>
+                            </label>
+                        </a>
+                    </form>
+
+                    <!-- BUTTONS SEJAJAR -->
+                    <div class="form-action-btns">
+                        <a href="pengiriman-data.html" class="btn-cancel">Kembali</a>
+                        <a href="pengiriman-pembayaran.html" class="btn-pay">Lanjut Ke Pembayaran</a>
+                    </div>
+                </div>
+
+                <!-- KANAN: RINGKASAN PESANAN -->
+                <div class="order-summary-box-fixed">
+                    <h3 class="inner-title">RINGKASAN PESANAN</h3>
+                    
+                    <div class="summary-list">
+                        <div class="summary-product">
+                            <div class="prod-desc">
+                                <p class="prod-name">Advanced Snail 92 All in One Cream</p>
+                                <p class="prod-qty">Qty: 1</p>
+                            </div>
+                            <p class="prod-price">Rp. 246.750</p>
+                        </div>
+                        <div class="summary-product">
+                            <div class="prod-desc">
+                                <p class="prod-name">Essence Toner, 100ml</p>
+                                <p class="prod-qty">Qty: 2</p>
+                            </div>
+                            <p class="prod-price">Rp. 272.000</p>
+                        </div>
+                        <div class="summary-product">
+                            <div class="prod-desc">
+                                <p class="prod-name">Tinted Glass H2Oil</p>
+                                <p class="prod-qty">Qty: 1</p>
+                            </div>
+                            <p class="prod-price">Rp. 116.220</p>
+                        </div>
+                    </div>
+
+                    <hr class="divider-line">
+                    
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span class="bold">Rp. 588.670</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Ongkos Kirim</span>
+                        <span class="bold">Rp. 10.000</span>
+                    </div>
+                    
+                    <hr class="divider-line">
+                    
+                    <div class="summary-row total-row">
+                        <span>TOTAL</span>
+                        <span>Rp. 598.670</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-divider"></div>
+        <div class="footer-container">
+            <div class="footer-column brand">
+                <h3>SCHÖN</h3>
+                <p>Beauty e-commerce untuk menemukan produk yang sesuai dengan kebutuhan kulitmu</p>
+            </div>
+            <div class="footer-column">
+                <h4>PRODUK</h4>
+                <ul>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Aksesoris</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>NEWSLETTER</h4>
+                <input type="email" placeholder="Masukkan email" class="email-input">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <p>© 2026 SCHÖN. All rights reserved</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <!-- Instagram SVG path -->
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <!-- Twitter SVG path -->
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook" class="social-link">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <!-- Facebook SVG path -->
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

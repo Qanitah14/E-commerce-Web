@@ -7,16 +7,16 @@
             <span class="brand-name">Schön</span>
         </div>
         <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
             <li><a href="edukasi.html" class="nav-link">Edukasi</a></li>
             <li><a href="produk.html" class="nav-link">Produk</a></li>
             <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
         </ul>
         <div class="nav-icons">
-            <i class="fas fa-search search-icon"></i>
-            <i class="fas fa-user user-icon"></i>
-            <i class="fas fa-shopping-cart cart-icon"></i>
-        </div>
+                <i class="fas fa-search search-icon"></i>
+                <i><a href="schon_profile.html" class="fas fa-user user-icon"></a></i>
+                <i><a href="keranjang.html" class="fas fa-shopping-cart cart-icon"></a></i>
+            </div>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -152,258 +152,284 @@
             <input type="checkbox" id="applyAll" class="filter-control">
 
             <!-- PRODUCT GRID - KANAN -->
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card" 
-                     data-kategori="Skincare" 
-                     data-tipe="Kombinasi" 
-                     data-rating="5" 
-                     data-price="0-50000"
-                     data-id="1">
-                <div class="product-image">
-                    <img src="img/aksesori6.webp" alt="Anting">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span><span class="tag">Kombinasi</span></div>
-                    <p class="brand">AMINI</p>
-                    <h3>Anting Wanita Bentuk Lingkaran Lapis Emas Anti karat </h3>
-                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 98.999</span>
-                    </div>
-                </div>
+    <div class="product-grid">
+    <a href="product.html?id=1" class="product-link">
+        <div class="product-card" 
+             data-kategori="Skincare" 
+             data-tipe="Kombinasi" 
+             data-rating="5" 
+             data-price="0-50000"
+             data-id="1">
+            <div class="product-image">
+                <img src="img/aksesori6.webp" alt="Anting">
             </div>
-
-            <div class="product-card" data-id="2">
-                <div class="product-image">
-                    <img src="img/aksesoris7.webp" alt="Kalung">
-                    <div class="discount-badge">-24%</div>
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">Pewterland</p>
-                    <h3>Pewterland Kalung 2D Sigil of Lucifer Bahan Logam</h3>
-                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
-                   <div class="price">
-                        <span class="current-price">Rp 94.505</span>
-                        <span class="original-price">Rp 125.000</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="3">
-                <div class="product-image">
-                    <img src="img/aksesoris8.webp" alt="bando">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">GOOYNN</p>
-                    <h3>Bando Renda Bordir Motif Bunga Gaya Kore</h3>
-                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
-                    <p class="price">Rp 13.600</p>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="4">
-                <div class="product-image">
-                    <img src="img/aksesoris9.webp" alt="Elomery">
-                    <div class="discount-badge">-21%</div>
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">Elomery</p>
-                    <h3>Elomery Cincin Ular Perak Snake Marsh Alloy Punk</h3>
-                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 4.399</span>
-                        <span class="original-price">Rp 5.597</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="5">
-                <div class="product-image">
-                    <img src="img/aksesoris10.webp" alt="gelang">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">Sadyye</p>
-                    <h3>Gelang Sepasang Bagua Tenun Yin Yang Tali Tangan </h3>
-                    <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 15.799</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="6">
-                <div class="product-image">
-                    <img src="img/aksesoris11.jpg" alt="Lipstick">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">Chard Wake</p>
-                    <h3>Chard Wake Kalung Wanita Original Berlian 2 Karat</h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
-                    <p class="price">Rp 87.000</p>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="7">
-                <div class="product-image">
-                    <img src="img/skincare7.webp" alt="cowok">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Skincare</span></div>
-                    <p class="brand">KAHF</p>
-                    <h3>KAHF BUNDLE 5IN1 PAKET BEBAS KUSAM</h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 153.832</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="8">
-                <div class="product-image">
-                    <img src="img/skincare8.webp" alt="daily">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Skincare</span></div>
-                    <p class="brand">Henleys</p>
-                    <h3>Henleys Men’s Daily Skincare Essentials</h3>
-                    <div class="rating">★★★★☆<span class="reviews">(4.5)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 233.730</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="9">
-                <div class="product-image">
-                    <img src="img/skincare9.webp" alt="cowok">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Kombinasi</span><span class="tag">Skincare</span></div>
-                    <p class="brand">Barber Daily</p>
-                    <h3>Barber Daily Quick Glow Basic – Skincare Pria Cerah</h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
-                    <div class="price"> 
-                        <span class="current-price">Rp 171.700</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="10">
-                <div class="product-image">
-                    <img src="img/skincare10.webp" alt="Cream mask">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Skincare</span></div>
-                    <p class="brand">ELVICTO</p>
-                    <h3>ELVICTO Paket Bright Expert </h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
-                    <p class="price">Rp 419.300</p>
-                </div>
-            </div>
-
-            
-            <div class="product-card" data-id="11">
-                <div class="product-image">
-                    <img src="img/skincare11.webp" alt="Moisturizer">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Kering</span><span class="tag">Skincare</span></div>
-                    <p class="brand">Azarine</p>
-                    <h3>Azarine Gentleman’s Glow Set </h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 130.150</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="12">
-                <div class="product-image">
-                    <img src="img/skincare12.webp" alt="Moisturizer">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Skincare</span></div>
-                    <p class="brand">Cave</p>
-                    <h3>Cave Intense Bright Moisturizer</h3>
-                    <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
-                    <p class="price">Rp 57.500</p>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="13">
-                <div class="product-image">
-                    <img src="img/makeup8.webp" alt="Cushion">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Makeup</span></div>
-                    <p class="brand">ESQA</p>
-                    <h3>ESQA Blurred Haze Velvet Lip Tint</h3>
-                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
-                    <p class="price">Rp 65.600</p>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="14">
-                <div class="product-image">
-                    <img src="img/makeup.webp" alt="Blush On">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Makeup</span></div>
-                    <p class="brand">Mineral Botanica</p>
-                    <h3>Mineral Botanica Highlight And Contour - 2.2g</h3>
-                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
-                    <div class="price">
-                        <span class="current-price">Rp 85.000</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card" data-id="15">
-                <div class="product-image">
-                    <img src="img/makeup5.webp" alt="Delicate">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Aksesoris</span></div>
-                    <p class="brand">Chard Wake</p>
-                    <h3>Chard Wake Gelang Wanita Fashion Original </h3>
-                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
-                    <p class="price">Rp 106.000</p>
-                </div>
-            </div>
-
-            
-            <div class="product-card" data-id="16">
-                <div class="product-image">
-                    <img src="img/makeup13.webp" alt="highlight">
-                </div>
-                <div class="product-card-content">
-                    <div class="tags"><span class="tag">Makeup</span></div>
-                    <p class="brand">Judy Doll</p>
-                    <h3>Judydoll Highlight & Contour Palette</h3>
-                    <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
-                    <p class="price">Rp 152.250 </p>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span><span class="tag">Kombinasi</span></div>
+                <p class="brand">AMINI</p>
+                <h3>Anting Wanita Bentuk Lingkaran Lapis Emas Anti karat </h3>
+                <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 98.999</span>
                 </div>
             </div>
         </div>
-</main> 
+    </a>
 
-<!-- ✅ POSISI BENAR - SETELAH .products-layout -->
+    <a href="product.html?id=2" class="product-link">
+        <div class="product-card" data-id="2">
+            <div class="product-image">
+                <img src="img/aksesoris7.webp" alt="Kalung">
+                <div class="discount-badge">-24%</div>
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">Pewterland</p>
+                <h3>Pewterland Kalung 2D Sigil of Lucifer Bahan Logam</h3>
+                <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 94.505</span>
+                    <span class="original-price">Rp 125.000</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=3" class="product-link">
+        <div class="product-card" data-id="3">
+            <div class="product-image">
+                <img src="img/aksesoris8.webp" alt="bando">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">GOOYNN</p>
+                <h3>Bando Renda Bordir Motif Bunga Gaya Kore</h3>
+                <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                <p class="price">Rp 13.600</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=4" class="product-link">
+        <div class="product-card" data-id="4">
+            <div class="product-image">
+                <img src="img/aksesoris9.webp" alt="Elomery">
+                <div class="discount-badge">-21%</div>
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">Elomery</p>
+                <h3>Elomery Cincin Ular Perak Snake Marsh Alloy Punk</h3>
+                <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 4.399</span>
+                    <span class="original-price">Rp 5.597</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=5" class="product-link">
+        <div class="product-card" data-id="5">
+            <div class="product-image">
+                <img src="img/aksesoris10.webp" alt="gelang">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">Sadyye</p>
+                <h3>Gelang Sepasang Bagua Tenun Yin Yang Tali Tangan </h3>
+                <div class="rating">★★★★★ <span class="reviews">(5.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 15.799</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=6" class="product-link">
+        <div class="product-card" data-id="6">
+            <div class="product-image">
+                <img src="img/aksesoris11.jpg" alt="Lipstick">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">Chard Wake</p>
+                <h3>Chard Wake Kalung Wanita Original Berlian 2 Karat</h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
+                <p class="price">Rp 87.000</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=7" class="product-link">
+        <div class="product-card" data-id="7">
+            <div class="product-image">
+                <img src="img/skincare7.webp" alt="cowok">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Skincare</span></div>
+                <p class="brand">KAHF</p>
+                <h3>KAHF BUNDLE 5IN1 PAKET BEBAS KUSAM</h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.5)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 153.832</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=8" class="product-link">
+        <div class="product-card" data-id="8">
+            <div class="product-image">
+                <img src="img/skincare8.webp" alt="daily">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Skincare</span></div>
+                <p class="brand">Henleys</p>
+                <h3>Henleys Men's Daily Skincare Essentials</h3>
+                <div class="rating">★★★★☆<span class="reviews">(4.5)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 233.730</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=9" class="product-link">
+        <div class="product-card" data-id="9">
+            <div class="product-image">
+                <img src="img/skincare9.webp" alt="cowok">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Kombinasi</span><span class="tag">Skincare</span></div>
+                <p class="brand">Barber Daily</p>
+                <h3>Barber Daily Quick Glow Basic – Skincare Pria Cerah</h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                <div class="price"> 
+                    <span class="current-price">Rp 171.700</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=10" class="product-link">
+        <div class="product-card" data-id="10">
+            <div class="product-image">
+                <img src="img/skincare10.webp" alt="Cream mask">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Skincare</span></div>
+                <p class="brand">ELVICTO</p>
+                <h3>ELVICTO Paket Bright Expert </h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                <p class="price">Rp 419.300</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=11" class="product-link">
+        <div class="product-card" data-id="11">
+            <div class="product-image">
+                <img src="img/skincare11.webp" alt="Moisturizer">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Kering</span><span class="tag">Skincare</span></div>
+                <p class="brand">Azarine</p>
+                <h3>Azarine Gentleman's Glow Set </h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 130.150</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=12" class="product-link">
+        <div class="product-card" data-id="12">
+            <div class="product-image">
+                <img src="img/skincare12.webp" alt="Moisturizer">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Skincare</span></div>
+                <p class="brand">Cave</p>
+                <h3>Cave Intense Bright Moisturizer</h3>
+                <div class="rating">★★★★☆ <span class="reviews">(4.0)</span></div>
+                <p class="price">Rp 57.500</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=13" class="product-link">
+        <div class="product-card" data-id="13">
+            <div class="product-image">
+                <img src="img/makeup8.webp" alt="Cushion">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Makeup</span></div>
+                <p class="brand">ESQA</p>
+                <h3>ESQA Blurred Haze Velvet Lip Tint</h3>
+                <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                <p class="price">Rp 65.600</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=14" class="product-link">
+        <div class="product-card" data-id="14">
+            <div class="product-image">
+                <img src="img/makeup.webp" alt="Blush On">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Makeup</span></div>
+                <p class="brand">Mineral Botanica</p>
+                <h3>Mineral Botanica Highlight And Contour - 2.2g</h3>
+                <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                <div class="price">
+                    <span class="current-price">Rp 85.000</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=15" class="product-link">
+        <div class="product-card" data-id="15">
+            <div class="product-image">
+                <img src="img/makeup5.webp" alt="Delicate">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Aksesoris</span></div>
+                <p class="brand">Chard Wake</p>
+                <h3>Chard Wake Gelang Wanita Fashion Original </h3>
+                <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                <p class="price">Rp 106.000</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="product.html?id=16" class="product-link">
+        <div class="product-card" data-id="16">
+            <div class="product-image">
+                <img src="img/makeup13.webp" alt="highlight">
+            </div>
+            <div class="product-card-content">
+                <div class="tags"><span class="tag">Makeup</span></div>
+                <p class="brand">Judy Doll</p>
+                <h3>Judydoll Highlight & Contour Palette</h3>
+                <div class="rating">★★★★☆<span class="reviews">(4.0)</span></div>
+                <p class="price">Rp 152.250 </p>
+            </div>
+        </div>
+    </a>
+</div>
+</main>
+
 <div class="pagination">
     <a href="produk.html" class="nav-btn prev" aria-label="Halaman Sebelumnya">
         <i class="fas fa-chevron-left"></i> Previous
     </a>
-    <a href="produk.html" class="page-num active" aria-label="Halaman 1">1</a>
+    <a href="produk.html" class="page-num" aria-label="Halaman 1">1</a>
     <a href="produk2.html" class="page-num" aria-label="Halaman 2">2</a>
-    <a href="produk3.html" class="page-num" aria-label="Halaman 3">3</a>
-    <a href="produk2.html" class="nav-btn next" aria-label="Halaman Selanjutnya">
-        Next <i class="fas fa-chevron-right"></i>
-    </a>
+    <a href="produk3.html" class="page-num active" aria-label="Halaman 3">3</a>
+    
 </div>
 
 <footer class="footer">
