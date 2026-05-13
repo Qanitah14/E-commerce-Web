@@ -44,90 +44,79 @@
         <div class="product-container">
             
             <!-- BREADCRUMB -->
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="produk.html">Produk</a> 
-                <span aria-hidden="true">›</span>
-                <a href="kategori-skincare.html">Skincare</a> 
-                <span aria-hidden="true">›</span>
-                <span class="active" aria-current="page">COSRX Advanced Snail 92</span>
-            </nav>
+            <nav class="breadcrumb">
+            <a href="produk.html">Produk</a> &gt; 
+            <a href="makeup.html">Makeup</a> &gt; 
+            <span class="active"> Implora Urban Eyeshadow</span>
+        </nav>
 
-            <!-- PRODUCT DETAIL SECTION -->
-            <section class="product-detail-section" aria-labelledby="product-title">
-                <!-- PRODUCT VISUALS -->
-                <div class="product-gallery">
-                    <figure class="main-image-wrapper">
-                        <img src="img/dp-deskripsi (1).JPG" alt="COSRX Advanced Snail 92 All in One Cream" class="main-img">
-                    </figure>
-                    <div class="thumbnail-row" role="tablist">
-                        <img src="img/dp-deskripsi (1).JPG" alt="Thumbnail 1" class="thumb active" role="tab" tabindex="0">
-                        <img src="img/dp-deskripsi (2).JPG" alt="Thumbnail 2" class="thumb" role="tab" tabindex="-1">
-                        <img src="img/dp-deskripsi (3).JPG" alt="Thumbnail 3" class="thumb" role="tab" tabindex="-1">
-                        <img src="img/dp-deskripsi (4).JPG" alt="Thumbnail 4" class="thumb" role="tab" tabindex="-1">
+        <section class="product-detail-section">
+            <!-- Left: Visuals -->
+            <div class="product-gallery">
+                <div class="main-image-wrapper">
+                    <img src="img/produk (4).webp" class="main-img">
+                </div>
+                <div class="thumbnail-row">
+                    <img src="img/produk (4).webp" alt="thumb" class="thumb active">
+                    <img src="img/implo.webp" alt="thumb" class="thumb">
+                </div>
+            </div>
+
+            <!-- Right: Info -->
+            <div class="product-info-panel">
+                <p class="brand-label">Implora</p>
+                <h1 class="product-title">Implora Urban Eyeshadow Palette Pigmented Long Lasting | Merah Jingga Official</h1>
+                
+                <div class="rating-row">
+                    <div class="stars">★★★★★</div>
+                    <span class="rating-text">5.0 (120 ulasan) | Terjual 500+</span>
+                </div>
+
+                <div class="price-container">
+                    <span class="price-now">Rp 39.500</span>
+                </div>
+
+                <div class="attribute-section">
+                    <p class="attr-title">Cocok Untuk Kulit:</p>
+                    <div class="skin-tags">
+                        <span class="skin-tag">Berminyak</span>
+                        <span class="skin-tag">Kering</span>
+                        <span class="skin-tag">Kombinasi</span>
                     </div>
                 </div>
 
-                <!-- PRODUCT INFO -->
-                <article class="product-info-panel">
-                    <p class="brand-label">COSRX</p>
-                    <h1 id="product-title" class="product-title">Advanced Snail 92 All in One Cream</h1>
-                    
-                    <div class="rating-row">
-                        <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
-                        <span class="rating-text">5.0 (120 ulasan) | <strong>Terjual 500+</strong></span>
-                    </div>
+                <p class="product-description">
+Deskripsi Implora Eyeshadow
+Implora Eyeshadow Palette menawarkan beragam pilihan warna yang mudah dibaurkan, mulai dari nude hingga bold. 
+                </p>
 
-                    <div class="price-container">
-                        <span class="price-now" aria-label="Harga sekarang">Rp 246.750</span>
-                        <span class="price-was" aria-label="Harga sebelumnya">Rp 329.000</span>
-                        <span class="discount-pill" aria-label="Diskon 25%">25%</span>
-                    </div>
-
-                    <div class="attribute-section">
-                        <p class="attr-title">Cocok Untuk Kulit:</p>
-                        <ul class="skin-tags" role="list">
-                            <li class="skin-tag">Berminyak</li>
-                            <li class="skin-tag">Kering</li>
-                            <li class="skin-tag">Kombinasi</li>
-                        </ul>
-                    </div>
-
-                    <p class="product-description">
-                        Advanced Snail 92 All in One Cream adalah pelembab bertekstur gel unik dengan kandungan 
-                        <strong>92% lendir siput</strong> yang fokus menghidrasi, menenangkan kulit iritasi, dan 
-                        memperbaiki skin barrier. Krim ini sangat efektif mempercepat regenerasi kulit.
-                    </p>
-
-                    <!-- PURCHASE CONTROLS -->
-                    <div class="action-panel">
-                        <div class="qty-control">
-                            <label for="quantity">Jumlah:</label>
-                            <div class="qty-stepper">
-                                <button type="button" aria-label="Kurangi jumlah">-</button>
-                                <input type="number" id="quantity" value="1" min="1" aria-label="Jumlah produk">
-                                <button type="button" aria-label="Tambah jumlah">+</button>
-                            </div>
-                            <span class="stock-info" aria-label="Stok tersedia">Stok tersedia: 48</span>
+                <div class="action-panel">
+                    <div class="qty-control">
+                        <label>Jumlah</label>
+                        <div class="qty-stepper">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
                         </div>
-                        
-                        <a href="keranjang.html" class="cart-btn" aria-label="Tambahkan ke keranjang">
-                            <i class="fas fa-shopping-cart"></i>
-                            Tambahkan Ke Keranjang
-                        </a>
+                        <span class="stock-info">Stok tersedia: 48</span>
                     </div>
-                </article>
-            </section>
+                    <button class="cart-btn">
+                       <a href="keranjang.html" class="btn-add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Tambahkan Ke Keranjang</a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-            <!-- TABS SECTION -->
-            <section class="tabs-area" aria-labelledby="tabs-heading">
-                <h2 id="tabs-heading" class="visually-hidden">Informasi Produk</h2>
-                
-                <nav class="tab-nav" role="tablist">
-                    <a href="dp-deskrips.html" class="tab-link" role="tab">Deskripsi</a>
-                    <a href="dp-kandungan.html" class="tab-link" role="tab">Kandungan</a>
-                    <a href="dp-cara.html" class="tab-link" role="tab">Cara Penggunaan</a>
-                    <a href="dp-review.html" class="tab-link active" role="tab" aria-selected="true">Ulasan (120)</a>
-                </nav>
+        <!-- Tabs Section -->
+        <section class="tabs-area">
+            <div class="tab-nav">
+                <!-- Link mengarah ke file html masing-masing -->
+                <a href="implo-desk.html" class="tab-link">Deskripsi</a>
+                <a href="implo-kand.html" class="tab-link active">Kandungan</a>
+                <a href="implo-cara.html" class="tab-link">Cara Penggunaan</a>
+                <a href="implo-review.html" class="tab-link">Ulasan (120)</a>
+            </div>
 
                 <!-- REVIEW SUMMARY -->
                 <section class="review-summary" aria-labelledby="review-summary-title">
@@ -203,6 +192,7 @@
                         <time class="time" datetime="2024-01-10">1 bulan yang lalu</time>
                         <p>Ini adalah serum vitamin C terbaik yang pernah saya coba! Noda hitam di wajah saya mulai memudar dan kulit terlihat lebih cerah. Kemasan juga sangat mewah dan elegan.</p>
                     </article>
+
                 </section>
             </section>
 
@@ -212,45 +202,44 @@
             <div class="related-grid">
                 <!-- Related Item 1 -->
                 <div class="rel-card">
-                    <img src="img/produk.jpg" alt="Related">
+                    <img src="img/produk (4).webp" alt="Related">
                     <div class="rel-body">
-                        <p class="rel-brand">YOU</p>
-                        <p class="rel-name">YOU Acneplus Spot Care Pro Serum 15gr</p>
-                        <p class="rel-price">Rp 40.800</p>
+                        <p class="rel-brand">IMPLORA</p>
+                        <p class="rel-name">Implora Urban Eyeshadow Palette</p>
+                        <p class="rel-price">Rp 39.500</p>
                         <a href="keranjang.html" class="rel-buy-btn">Belanja Sekarang</a>
                     </div>
                 </div>
                 <!-- Related Item 2 -->
                 <div class="rel-card">
-                    <img src="img/REKOM PRODUK(1).jpg" alt="Related">
+                    <img src="img/img (5).webp" alt="Related">
                     <div class="rel-body">
-                        <p class="rel-brand">Safi</p>
-                        <p class="rel-name">Naturals Micellar Water | Neem</p>
-                        <p class="rel-price">Rp 36.900</p>
+                        <p class="rel-brand">MADE FOR MAKEUP</p>
+                        <p class="rel-name">Mad For Makeup Tinted Glass H2Oil</p>
+                        <p class="rel-price">Rp 107.280</p>
                         <a href="keranjang.html" class="rel-buy-btn">Belanja Sekarang</a>
                     </div>
                 </div>
                 <!-- Related Item 3 -->
                 <div class="rel-card">
-                    <img src="img/produk (16).jpeg" alt="Related">
+                    <img src="img/produk (11).webp" alt="Related">
                     <div class="rel-body">
-                        <p class="rel-brand">Skintific</p>
-                        <p class="rel-name">5X Ceramide Barrier Moisture Gel</p>
-                        <p class="rel-price">Rp 112.850</p>
+                        <p class="rel-brand">FOCALLURE</p>
+                        <p class="rel-name">FOCALLURE Eyebrow Cream Gel waterproof</p>
+                        <p class="rel-price">Rp 37.900</p>
                         <a href="keranjang.html" class="rel-buy-btn">Belanja Sekarang</a>
                     </div>
                 </div>
                 <!-- Related Item 4 -->
                 <div class="rel-card">
-                    <img src="img/REKOM PRODUK(2).jpg" alt="Related">
+                    <img src="img/produk (13).webp" alt="Related">
                     <div class="rel-body">
-                        <p class="rel-brand">Pyunkang Yul</p>
-                        <p class="rel-name">Essence Toner, 100ml</p>
-                        <p class="rel-price">Rp 135.000</p>
+                        <p class="rel-brand">PIXY</p>
+                        <p class="rel-name">PIXY End Matte Blush</p>
+                        <p class="rel-price">Rp 38.600</p>
                         <a href="keranjang.html" class="rel-buy-btn">Belanja Sekarang</a>
                     </div>
                 </div>
-            </div>
         </section>
     </div>
 </div>
