@@ -1603,6 +1603,13 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
     overflow: hidden; 
 }
 
+.date {
+    display: block;        
+    color: #888888;       /* Mengubah warna menjadi abu-abu muda */
+    font-size: 0.85rem;    /* Memperkecil ukuran font sedikit */
+    margin-top: 10px;      /* Memberikan jarak dengan teks di atasnya */
+    font-weight: normal;   /* Memastikan teks tidak tebal (bold) */
+}
 
 .list-section { 
     padding: 60px 0; 
