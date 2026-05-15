@@ -2203,7 +2203,7 @@ a { text-decoration: none; color: #000; font-size: 0.95rem; }
 
 .article-title {
     text-align: center; /* Membuat teks judul berada di tengah secara horizontal */
-    font-family: 'Playfair Display', serif; /* Menggunakan font sesuai prototype */
+    font-family: 'serif'; /* Menggunakan font sesuai prototype */
     font-size: 32px; /* Menyesuaikan ukuran teks[cite: 2] */
     margin: 20px auto; /* Memberi jarak atas-bawah dan memastikan elemen berada di tengah[cite: 2] */
     line-height: 1.4; /* Memberi ruang antar baris teks agar nyaman dibaca[cite: 2] */
