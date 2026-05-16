@@ -55,9 +55,9 @@
             <!-- FILTER SIDEBAR -->
             <input type="checkbox" id="toggleFilter" class="filter-toggle">
             <div class="filter-sidebar">
-                <label for="toggleFilter" class="filter-close">
-                    <i class="fas fa-times"></i>
-                </label>
+               <label for="toggleFilter" class="filter-close" style="cursor: pointer;" onclick="window.location.href='aksesoris.html';">
+        <i class="fas fa-times"></i>
+    </label>
                 
                 <div class="filter-sections">
                     <!-- KATEGORI -->
@@ -137,7 +137,7 @@
                             <a href="produk.html" class="filter-btn reset-btn">
                                 <i class="fas fa-undo"></i> Atur Ulang
                             </a>
-                            <a href="skincare.html" class="filter-btn apply-btn">
+                            <a href="aksesoris.html" class="filter-btn apply-btn">
                                 <i class="fas fa-check"></i> Terapkan
                             </a>
                         </div>
@@ -173,7 +173,12 @@
                     </div>
                 </a>
 
-                <div class="product-card" data-id="2">
+                <div class="product-card"
+                        data-kategori="Aksesoris" 
+                            data-tipe="Kombinasi" 
+                            data-rating="4.5" 
+                            data-price="0-50000"
+                 data-id="2">
                     <a href="fras-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/produk (7).webp" alt="Jepitan Rambut">
@@ -190,7 +195,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="3">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4" 
+                     data-price="0-50000"
+                     data-id="3">
                     <a href="cw-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/produk (14).webp" alt="Delicate">
@@ -205,7 +215,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="4">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4.5" 
+                     data-price="0-50000"
+                     data-id="4">
                     <a href="bamerek-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris1.webp" alt="gelang">
@@ -220,7 +235,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="5">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4.5" 
+                     data-price="0-50000"
+                     data-id="5">
                     <a href="sky-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris2.webp" alt="JEPITAN">
@@ -237,7 +257,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="6">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4.5" 
+                     data-price="0-50000"
+                     data-id="6">
                     <a href="gf-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris3.webp" alt="Jepitan Rambut">
@@ -254,7 +279,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="7">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4" 
+                     data-price="0-50000"
+                     data-id="7">
                     <a href="sadyye-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris4.webp" alt="cincin">
@@ -273,7 +303,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="9">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4" 
+                     data-price="0-50000"
+                     data-id="9">
                     <a href="leere-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris5.webp" alt="Gelang">
@@ -288,7 +323,12 @@
                     </a>
                 </div>
 
-                <div class="product-card" data-id="10">
+                <div class="product-card" 
+                     data-kategori="Aksesoris" 
+                     data-tipe="Kombinasi" 
+                     data-rating="4.5" 
+                     data-price="0-50000"
+                     data-id="10">
                     <a href="cwk-desk.html" class="product-link">
                         <div class="product-image">
                             <img src="img/aksesoris11.jpg" alt="Lipstick">
@@ -365,6 +405,140 @@ Instagram" aria-label="Instagram">
     </div>
 </div>
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Elemen DOM
+    const kategoriCheckboxes = document.querySelectorAll('.filter-kategori');
+    const tipeCheckboxes = document.querySelectorAll('.filter-tipe');
+    const ratingCheckboxes = document.querySelectorAll('.filter-rating');
+    const priceMinSlider = document.getElementById('priceMin');
+    const priceMaxSlider = document.getElementById('priceMax');
+    const priceDisplay = document.querySelector('.price-display span');
+    const productCards = document.querySelectorAll('.product-card');
+    const productCountText = document.getElementById('productCount');
+    const filterIndicator = document.getElementById('filterIndicator');
+    const resetBtn = document.querySelector('.reset-btn');
+    const applyBtn = document.querySelector('.apply-btn');
+
+    // 2. Fungsi untuk Update Tampilan Angka Slider Harga
+    function updatePriceDisplay() {
+        let minVal = parseInt(priceMinSlider.value);
+        let maxVal = parseInt(priceMaxSlider.value);
+
+        // Proteksi agar slider min tidak melewati slider max
+        if (minVal > maxVal) {
+            let temp = minVal;
+            priceMinSlider.value = maxVal;
+            maxVal = temp;
+        }
+
+        priceDisplay.textContent = `Rp ${minVal.toLocaleString('id-ID')} - Rp ${maxVal.toLocaleString('id-ID')}`;
+    }
+
+    // 3. Fungsi Utama Filter
+    function filterProducts() {
+        // Ambil semua value dari checkbox yang dicentang
+        const activeKategori = Array.from(kategoriCheckboxes).filter(i => i.checked).map(i => i.value);
+        const activeTipe = Array.from(tipeCheckboxes).filter(i => i.checked).map(i => i.value);
+        const activeRating = Array.from(ratingCheckboxes).filter(i => i.checked).map(i => parseFloat(i.value));
+        const minPrice = parseInt(priceMinSlider.value);
+        const maxPrice = parseInt(priceMaxSlider.value);
+
+        let visibleCount = 0;
+        let totalActiveFilters = activeKategori.length + activeTipe.length + activeRating.length;
+        
+        if (minPrice > parseInt(priceMinSlider.min) || maxPrice < parseInt(priceMaxSlider.max)) {
+            totalActiveFilters += 1; // hitung filter harga jika bergeser
+        }
+
+        // Looping setiap produk
+        productCards.forEach(card => {
+            // Ambil data atribut dari produk (berikan fallback jika data kosong)
+            const prodKategori = card.getAttribute('data-kategori') || '';
+            const prodTipe = card.getAttribute('data-tipe') || '';
+            const prodRating = parseFloat(card.getAttribute('data-rating')) || 0;
+            
+            // Mengambil harga dari data-price, jika tidak ada, ambil angka dari teks harga di dalam kartu
+            let prodPrice = parseInt(card.getAttribute('data-price'));
+            if (isNaN(prodPrice)) {
+                const priceText = card.querySelector('.current-price, .price')?.textContent || '0';
+                prodPrice = parseInt(priceText.replace(/[^0-9]/g, '')) || 0;
+            }
+
+            // Logika Kecocokan (Kondisi Filter)
+            const matchKategori = activeKategori.length === 0 || activeKategori.includes(prodKategori);
+            const matchTipe = activeTipe.length === 0 || activeTipe.includes(prodTipe);
+            
+            // Rating filter (contoh: jika pilih 4.5, maka rating 4.5 ke atas akan lolos)
+            const matchRating = activeRating.length === 0 || activeRating.some(r => {
+                if (r === 5) return prodRating === 5;
+                return prodRating >= r;
+            });
+            
+            const matchPrice = prodPrice >= minPrice && prodPrice <= maxPrice;
+
+            // Jika semua kondisi terpenuhi, tampilkan produk
+            if (matchKategori && matchTipe && matchRating && matchPrice) {
+                card.style.display = '';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Update teks jumlah produk yang tampil
+        productCountText.textContent = `Menampilkan ${visibleCount} produk`;
+
+        // Update indikator jumlah filter aktif di atas tombol
+        if (totalActiveFilters > 0) {
+            filterIndicator.style.display = 'inline-block';
+            filterIndicator.textContent = totalActiveFilters;
+        } else {
+            filterIndicator.style.display = 'none';
+        }
+    }
+
+    // 4. Fungsi Reset Filter
+    if(resetBtn) {
+        resetBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            kategoriCheckboxes.forEach(i => i.checked = false);
+            tipeCheckboxes.forEach(i => i.checked = false);
+            ratingCheckboxes.forEach(i => i.checked = false);
+            priceMinSlider.value = priceMinSlider.min;
+            priceMaxSlider.value = priceMaxSlider.max;
+            
+            updatePriceDisplay();
+            filterProducts();
+        });
+    }
+
+    // 5. Tombol Terapkan (Khusus Mobile agar menutup sidebar saat diklik)
+    if(applyBtn) {
+        applyBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            filterProducts();
+            // Menutup filter sidebar jika menggunakan sistem checkbox hack (toggleFilter)
+            const toggleFilter = document.getElementById('toggleFilter');
+            if (toggleFilter) toggleFilter.checked = false;
+        });
+    }
+
+    // 6. Event Listeners untuk Deteksi Perubahan Instan (Responsive)
+    kategoriCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+    tipeCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+    ratingCheckboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+    
+    priceMinSlider.addEventListener('input', () => { updatePriceDisplay(); filterProducts(); });
+    priceMaxSlider.addEventListener('input', () => { updatePriceDisplay(); filterProducts(); });
+
+    // Jalankan fungsi di awal saat halaman pertama kali dimuat
+    updatePriceDisplay();
+    filterProducts();
+});
+
+</script>
 
 </body>
 </html>
